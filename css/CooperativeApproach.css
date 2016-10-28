@@ -1,0 +1,217 @@
+@charset "UTF-8";
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, span, p, a, input, button {
+  font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch; }
+
+ul > li {
+  list-style: none; }
+
+@font-face {
+  font-family: "name";
+  src: url("../font/file.TTF"); }
+/* 
+@include transition(all 0.4s);
+@media screen and (min-width:750px) and (max-width: 1000px) {}
+@media screen and (max-width:1000px) {}
+
+
+@media screen and (max-width:1610px) {	
+}
+@media screen and (max-width:639px) {
+}
+@media screen and (max-width:415px) {
+}
+ */
+/*藏字*/
+/*中心點*/
+.banner {
+  width: 100%;
+  height: auto; }
+  .banner img {
+    width: 100%;
+    height: auto; }
+  @media screen and (max-width: 709px) {
+    .banner {
+      display: none; } }
+
+article {
+  width: 980px;
+  height: auto;
+  overflow: hidden;
+  margin: 69px auto 0 auto;
+  padding-bottom: 69px; }
+  @media screen and (max-width: 980px) {
+    article {
+      width: 90%;
+      margin: 0px auto 0 auto; } }
+  article .titleimg {
+    width: 100%;
+    height: auto; }
+    article .titleimg img {
+      width: 100%;
+      height: auto; }
+    @media screen and (max-width: 980px) {
+      article .titleimg {
+        display: none; } }
+  article > h1 {
+    color: #666666;
+    font-size: 40px;
+    padding-top: 52px; }
+    @media screen and (max-width: 415px) {
+      article > h1 {
+        font-size: 27px; } }
+  article > h2 {
+    color: #666666;
+    font-size: 24px;
+    padding-top: 22px;
+    line-height: 1.8em; }
+    @media screen and (max-width: 415px) {
+      article > h2 {
+        font-size: 16px; } }
+  article ul.piclist {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 117px; }
+    article ul.piclist li {
+      display: block;
+      width: 25%;
+      height: auto;
+      overflow: hidden;
+      float: left; }
+      @media screen and (max-width: 415px) {
+        article ul.piclist li {
+          width: 50%;
+          margin-bottom: 10px; } }
+      article ul.piclist li > div {
+        width: 136px;
+        height: 135px;
+        margin: 0 auto; }
+      article ul.piclist li > p {
+        text-align: center;
+        padding: 10px 30px 0 30px;
+        font-weight: bold;
+        line-height: 1.6em;
+        font-size: 20px; }
+        @media screen and (max-width: 415px) {
+          article ul.piclist li > p {
+            font-size: 16px; } }
+  article .content_text1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    article .content_text1 .box_pic {
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+      article .content_text1 .box_pic img {
+        width: 100%;
+        height: auto; }
+    article .content_text1 .box_text {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      padding-top: 20px;
+      padding-bottom: 140px; }
+      article .content_text1 .box_text p {
+        display: block;
+        padding: 10px 60px 10px 30px;
+        color: #666666;
+        font-size: 24px;
+        float: left;
+        background-image: url("../images/Cooperation/s1.png");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        @media screen and (max-width: 415px) {
+          article .content_text1 .box_text p {
+            padding: 10px 20px 10px 30px;
+            font-size: 16px; } }
+  article .content_text2 {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    article .content_text2 .box_pic {
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+      article .content_text2 .box_pic img {
+        width: 100%;
+        height: auto; }
+    article .content_text2 .box_text {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      padding-top: 20px;
+      padding-bottom: 140px; }
+      article .content_text2 .box_text p {
+        display: block;
+        padding: 10px 100px 10px 30px;
+        color: #666666;
+        font-size: 24px;
+        float: left;
+        background-image: url("../images/Cooperation/s2.png");
+        background-repeat: no-repeat;
+        background-position: 0 50%; }
+        @media screen and (max-width: 415px) {
+          article .content_text2 .box_text p {
+            padding: 10px 20px 10px 30px;
+            font-size: 16px; } }
+  article .step {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    article .step > h3 {
+      display: block;
+      width: 100%;
+      height: 31px;
+      background-image: url("../images/Cooperation/barttxt.jpg");
+      background-repeat: no-repeat; }
+      @media screen and (max-width: 415px) {
+        article .step > h3 {
+          background-size: 200% auto; } }
+    article .step .picstep {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      margin-top: 100px; }
+      @media screen and (max-width: 415px) {
+        article .step .picstep {
+          margin-top: 20px; } }
+      article .step .picstep img {
+        width: 100%;
+        height: auto; }
+    article .step > p {
+      float: right;
+      font-size: 31px;
+      color: #808080;
+      padding-top: 50px; }
+      @media screen and (max-width: 415px) {
+        article .step > p {
+          float: none;
+          text-align: center; } }
+  article a.gotoTop {
+    display: block;
+    width: 50px;
+    height: 83px;
+    background-image: url("../images/gototop.png");
+    margin: 200px auto 150px auto; }
+    @media screen and (max-width: 415px) {
+      article a.gotoTop {
+        margin: 50px auto 50px auto; } }

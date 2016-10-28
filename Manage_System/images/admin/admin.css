@@ -1,0 +1,65 @@
+body,td {
+       font-family: tahoma,ms shell dlg,宋体; font-size : 12px; scrollbar-base-color:  #ffcccc; scrollbar-arrow-color: #ffffff; line-height:150%;
+}
+
+
+
+a:link,a:visited {
+        text-decoration: none; color: #666666;
+}
+a:active {
+        COLOR: #FF9900;
+}
+
+A:hover {
+        COLOR: #FF9900; text-decoration: underline;
+}
+li { list-style-type:none}
+input {  border:1px solid #99FFFF; font-family:Georgia, "Times New Roman", Times, serif; font-size:12px; height:22px; padding:2px;}
+/* 列表 */
+.ul1 { margin:0; padding:0;}
+.ul1 li{ margin:0; padding:0;}
+
+/*提交按扭*/
+.sub { border:1px solid #999966; background:#FFFFFF; vertical-align:middle; padding:5px 0 0 0; font-size:14px; height:30px;}
+.but1 { background:none;  border:1px solid #999;}
+.but2 { border:none}
+.butfile {  width:255px;  }
+
+/*表单,选取框*/
+.select { width:100px;}
+
+/*AJAX结果*/
+.res {border:1px solid #999966; width:200px; background:#fff; font-size:12px; padding:5px; line-height:150%; color: #009933; display:none; margin:10px auto; }
+.ajaxmenu { padding:10px; border:1px solid #99CCCC; color:#666666; background:#FFFFFF}
+.ajaxmenu input{ float:left; margin:5px 0 0 5px; font-size:12px; border:1px solid #99CCFF; background:#FFF; padding:2px 5px 0;}
+
+/*表格*/
+.tb1{}
+.tr1{ background:}
+.tr1 td{ border-bottom:1px solid #99FFFF}
+
+/* 分页 */
+.pages {height:30px; padding:5px;}
+.pages a,.pages span{ height:14px; padding:1px 4px;margin:2px; display:block; float:left; color:#666}
+.pages a.on,
+.pages a:hover
+{background:#F7F7F7;color:#87A32E;display:block; height:14px; text-decoration:none;}
+.pages input{height:17px;width:20px; margin:0; color:#87A32E;font:normal 12px/14px Verdana; display:block;}
+
+.page {width:500px; margin:0 auto;}
+
+/*顶部导航菜单*/
+.all { margin:0 auto; text-align:center; overflow:hidden; padding:0}
+.main {  margin:5px auto 0 auto; clear:both; width:800px}
+.top_nav { border-bottom:1px solid #996666; height:20px; width:800px; }
+.top_nav ul { margin:0; padding:0}
+.top_nav ul li { float:left; width:50px; height:20px; margin-left:10px; border:1px solid #996666; border-bottom:none;}
+
+/*二级导航*/
+.nav { text-align:left; color:#003333; font-size:12px; margin:0 0 10px 0; padding:0; width:90%}
+.nav a { margin-left:10px;}
+.nav .on{ text-decoration:line-through; font-size:16px}
+
+/*后台内容管理搜索*/
+.show_op{ width:720px; padding:5px; text-align:left; border:1px dotted #960}

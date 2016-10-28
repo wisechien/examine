@@ -1,0 +1,575 @@
+@charset "UTF-8";
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, span, p, a, input, button {
+  font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch; }
+
+ul > li {
+  list-style: none; }
+
+@font-face {
+  font-family: "name";
+  src: url("../font/file.TTF"); }
+/* 
+@include transition(all 0.4s);
+@media screen and (min-width:750px) and (max-width: 1000px) {}
+@media screen and (max-width:1000px) {}
+
+
+@media screen and (max-width:1610px) {	
+}
+@media screen and (max-width:639px) {
+}
+@media screen and (max-width:415px) {
+}
+ */
+/*藏字*/
+/*中心點*/
+.show {
+  position: relative;
+  width: 100%;
+  height: 430px;
+  background-image: url("../images/index/silde.jpg");
+  background-position: center; }
+  @media screen and (min-width: 769px) and (max-width: 980px) {
+    .show {
+      height: 230px;
+      background-size: auto  100%;
+      background-repeat: no-repeat; } }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    .show {
+      height: 230px;
+      background-size: auto  100%;
+      background-repeat: no-repeat; } }
+  @media screen and (max-width: 414px) {
+    .show {
+      display: none; } }
+  .show > nav {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    margin-top: -215.5px;
+    display: block;
+    width: 405px;
+    height: 331px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 32px 47px 0 47px; }
+    @media screen and (min-width: 769px) and (max-width: 980px) {
+      .show > nav {
+        right: 2%;
+        width: 305px;
+        height: 300px;
+        margin-top: -150px;
+        padding: 25px 35px 0 35px; } }
+    @media screen and (min-width: 415px) and (max-width: 768px) {
+      .show > nav {
+        right: 2%;
+        width: 305px;
+        height: 200px;
+        margin-top: -150px;
+        padding: 25px 35px 0 35px; } }
+    .show > nav > h2, .show > nav > h3 {
+      color: #fff;
+      text-align: center;
+      font-weight: 600; }
+    .show > nav > h2 {
+      font-size: 28px; }
+      @media screen and (min-width: 415px) and (max-width: 768px) {
+        .show > nav > h2 {
+          font-size: 20px; } }
+      @media screen and (min-width: 769px) and (max-width: 980px) {
+        .show > nav > h2 {
+          font-size: 20px; } }
+    .show > nav > h3 {
+      font-size: 19px;
+      padding-top: 10px; }
+      @media screen and (min-width: 415px) and (max-width: 768px) {
+        .show > nav > h3 {
+          font-size: 14px;
+          padding-top: 5px; } }
+      @media screen and (min-width: 769px) and (max-width: 980px) {
+        .show > nav > h3 {
+          font-size: 14px;
+          padding-top: 5px; } }
+    .show > nav input {
+      width: 308px;
+      height: 35px;
+      margin-top: 10px;
+      padding-left: 10px; }
+      .show > nav input:nth-child(1) {
+        margin-top: 25px; }
+      @media screen and (min-width: 769px) and (max-width: 980px) {
+        .show > nav input {
+          width: 240px;
+          height: 27px;
+          margin-top: 5px;
+          padding-left: 10px; }
+          .show > nav input:nth-child(1) {
+            margin-top: 10px; } }
+      @media screen and (min-width: 415px) and (max-width: 768px) {
+        .show > nav input {
+          width: 240px;
+          height: 27px;
+          margin-top: 5px;
+          padding-left: 10px; }
+          .show > nav input:nth-child(1) {
+            margin-top: 10px; } }
+    .show > nav button {
+      width: 308px;
+      height: 42px;
+      background-color: #E3007F;
+      border: 0px;
+      font-size: 19px;
+      color: #fff;
+      margin-top: 20px; }
+      @media screen and (min-width: 415px) and (max-width: 768px) {
+        .show > nav button {
+          width: 240px;
+          height: 30px;
+          margin-top: 15px; } }
+      @media screen and (min-width: 769px) and (max-width: 980px) {
+        .show > nav button {
+          width: 240px;
+          height: 30px;
+          margin-top: 15px; } }
+
+aside {
+  width: 980px;
+  height: 388px;
+  margin: 0 auto;
+  margin-top: 31px; }
+  @media screen and (min-width: 769px) and (max-width: 980px) {
+    aside {
+      width: 95%;
+      height: auto;
+      overflow: hidden; } }
+  @media screen and (min-width: 414px) and (max-width: 768px) {
+    aside {
+      width: 95%;
+      height: auto;
+      overflow: hidden; } }
+  @media screen and (max-width: 414px) {
+    aside {
+      width: 95%;
+      height: auto;
+      overflow: hidden; } }
+  @media screen and (max-width: 376px) {
+    aside {
+      margin-bottom: 50px;
+      height: auto;
+      overflow: hidden; } }
+  aside ul > li {
+    display: block;
+    width: 31.4%;
+    float: left;
+    margin-right: 28px; }
+    @media screen and (min-width: 769px) and (max-width: 980px) {
+      aside ul > li {
+        margin-right: 35px;
+        width: 30%; } }
+    @media screen and (min-width: 414px) and (max-width: 727px) {
+      aside ul > li {
+        margin-right: 15px; } }
+    @media screen and (min-width: 414px) and (max-width: 768px) {
+      aside ul > li {
+        margin-right: 10px; } }
+    @media screen and (min-width: 414px) and (max-width: 540px) {
+      aside ul > li {
+        margin-right: 10px; } }
+    @media screen and (max-width: 414px) {
+      aside ul > li {
+        width: 100%;
+        margin: 0 auto 20px auto; } }
+    aside ul > li:last-child {
+      margin-right: 0px; }
+    aside ul > li > h2 {
+      display: block;
+      width: 100%;
+      height: 61px;
+      text-align: center;
+      line-height: 61px;
+      color: #333;
+      font-size: 24px;
+      font-weight: 400; }
+    aside ul > li > div {
+      width: 100%;
+      height: auto; }
+      aside ul > li > div > img {
+        width: 100%;
+        height: auto; }
+    aside ul > li > p {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6em;
+      text-align: justify;
+      padding: 13px 5px 0 5px; }
+
+article#news {
+  width: 980px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 33px; }
+  @media screen and (max-width: 980px) {
+    article#news {
+      width: 95%; } }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    article#news {
+      width: 95%; } }
+  @media screen and (max-width: 414px) {
+    article#news {
+      width: 95%; } }
+  article#news > h2 {
+    display: block;
+    width: 100%;
+    height: 53px;
+    background-color: #00a0e8;
+    line-height: 53px;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 500;
+    background-image: url("../images/index/colorBarIcon.png");
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    padding-left: 50px;
+    margin-bottom: 27px; }
+    article#news > h2 > span {
+      font-size: 19px;
+      padding-left: 5px; }
+    article#news > h2 > a {
+      font-size: 19px;
+      color: #fff;
+      float: right;
+      padding-right: 10px; }
+    @media screen and (max-width: 414px) {
+      article#news > h2 {
+        width: 100%;
+        font-size: 20px; }
+        article#news > h2 > span {
+          font-size: 15px; }
+        article#news > h2 > a {
+          font-size: 15px; } }
+  article#news > ul {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+    article#news > ul > li {
+      display: block;
+      width: 221px;
+      height: 238px;
+      border: 1px solid #E6E6E6;
+      float: left;
+      margin-right: 31px; }
+      article#news > ul > li:nth-child(4), article#news > ul > li:nth-child(8) {
+        margin-right: 0px; }
+      @media screen and (min-width: 769px) and (max-width: 980px) {
+        article#news > ul > li {
+          width: 24%;
+          margin-bottom: 10px;
+          margin-right: 9px; }
+          article#news > ul > li:nth-child(4), article#news > ul > li:nth-child(8) {
+            margin-right: 0px; } }
+      @media screen and (min-width: 415px) and (max-width: 768px) {
+        article#news > ul > li {
+          width: 32.5%;
+          margin-bottom: 10px;
+          margin-right: 5px; }
+          article#news > ul > li:nth-child(4), article#news > ul > li:nth-child(8) {
+            margin-right: 5px; }
+          article#news > ul > li:nth-child(3), article#news > ul > li:nth-child(6) {
+            margin-right: 0px; } }
+      @media screen and (max-width: 414px) {
+        article#news > ul > li {
+          width: 49.5%;
+          margin-bottom: 10px;
+          margin-right: 0px; } }
+      @media screen and (max-width: 376px) {
+        article#news > ul > li {
+          width: 100%;
+          margin-bottom: 10px;
+          margin-right: 0px; } }
+      article#news > ul > li > .newimg {
+        width: 100%;
+        height: 149px; }
+        @media screen and (min-width: 415px) and (max-width: 768px) {
+          article#news > ul > li > .newimg {
+            height: auto;
+            overflow: hidden; } }
+        article#news > ul > li > .newimg > a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+          @media screen and (min-width: 415px) and (max-width: 768px) {
+            article#news > ul > li > .newimg > a {
+              overflow: hidden; } }
+          @media screen and (max-width: 376px) {
+            article#news > ul > li > .newimg > a {
+              overflow: hidden; } }
+          article#news > ul > li > .newimg > a > img {
+            width: 100%;
+            height: 100%; }
+            @media screen and (min-width: 415px) and (max-width: 768px) {
+              article#news > ul > li > .newimg > a > img {
+                width: 100%;
+                height: auto; } }
+            @media screen and (max-width: 376px) {
+              article#news > ul > li > .newimg > a > img {
+                width: 100%;
+                height: auto; } }
+      article#news > ul > li > .newText {
+        position: relative;
+        width: 100%;
+        height: 89px;
+        padding: 5px 10px 10px 10px; }
+        article#news > ul > li > .newText > p {
+          font-size: 13px;
+          color: #333333; }
+        article#news > ul > li > .newText > span {
+          position: absolute;
+          left: 5%;
+          bottom: 5%;
+          font-size: 13px;
+          color: #999; }
+        article#news > ul > li > .newText > a {
+          position: absolute;
+          right: 5%;
+          bottom: 5%;
+          color: #00a0e8; }
+          article#news > ul > li > .newText > a:hover {
+            color: #005F8A; }
+
+article#other {
+  width: 980px;
+  height: 272px;
+  margin: 0 auto;
+  margin-top: 85px; }
+  @media screen and (min-width: 769px) and (max-width: 980px) {
+    article#other {
+      width: 95%;
+      height: auto;
+      overflow: hidden; } }
+  @media screen and (min-width: 415px) and (max-width: 768px) {
+    article#other {
+      width: 95%;
+      height: auto;
+      overflow: hidden; } }
+  @media screen and (max-width: 414px) {
+    article#other {
+      width: 95%;
+      height: auto;
+      overflow: hidden; } }
+  article#other section {
+    width: 475px;
+    height: 272px; }
+    @media screen and (min-width: 415px) and (max-width: 980px) {
+      article#other section {
+        width: 100%;
+        height: 272px;
+        margin-bottom: 30px; } }
+    @media screen and (max-width: 414px) {
+      article#other section {
+        width: 100%;
+        height: 272px;
+        margin-bottom: 30px; } }
+    @media screen and (max-width: 376px) {
+      article#other section {
+        width: 100%;
+        height: auto;
+        overflow: hidden; } }
+    article#other section > div {
+      width: 100%;
+      height: 192px; }
+    article#other section:nth-child(1) {
+      float: left; }
+      article#other section:nth-child(1) > h2 {
+        display: block;
+        width: 100%;
+        height: 53px;
+        background-color: #6FB92C;
+        line-height: 53px;
+        color: #fff;
+        font-size: 33px;
+        font-weight: 500;
+        background-image: url("../images/index/colorBarIcon.png");
+        background-repeat: no-repeat;
+        background-position: 10px 50%;
+        padding-left: 50px;
+        margin-bottom: 27px; }
+        article#other section:nth-child(1) > h2 > span {
+          font-size: 19px;
+          padding-left: 5px; }
+        article#other section:nth-child(1) > h2 > a {
+          font-size: 19px;
+          color: #fff;
+          float: right;
+          padding-right: 10px; }
+        @media screen and (max-width: 376px) {
+          article#other section:nth-child(1) > h2 {
+            width: 100%;
+            font-size: 20px; }
+            article#other section:nth-child(1) > h2 > span {
+              font-size: 15px; }
+            article#other section:nth-child(1) > h2 > a {
+              font-size: 15px; } }
+      @media screen and (max-width: 376px) {
+        article#other section:nth-child(1) > div {
+          width: 100%;
+          height: auto;
+          overflow: hidden; } }
+      article#other section:nth-child(1) > div > h3 {
+        display: block;
+        width: 176px;
+        height: 176px;
+        float: left;
+        margin-top: 8px;
+        margin-right: 15px; }
+        @media screen and (max-width: 414px) {
+          article#other section:nth-child(1) > div > h3 {
+            width: 100px;
+            height: 100px; } }
+        article#other section:nth-child(1) > div > h3 > img {
+          width: 100%;
+          height: 100%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%; }
+      article#other section:nth-child(1) > div > h4, article#other section:nth-child(1) > div > p, article#other section:nth-child(1) > div > h5 {
+        color: #6FB92C; }
+      article#other section:nth-child(1) > div > h4 {
+        font-size: 19px;
+        padding-top: 20px; }
+      article#other section:nth-child(1) > div > p {
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 20px;
+        line-height: 1.6em; }
+        @media screen and (max-width: 376px) {
+          article#other section:nth-child(1) > div > p {
+            display: none; } }
+      article#other section:nth-child(1) > div > h5 {
+        font-size: 16px;
+        padding-top: 10px; }
+        @media screen and (max-width: 376px) {
+          article#other section:nth-child(1) > div > h5 {
+            display: none; } }
+    article#other section:nth-child(2) {
+      float: right; }
+      article#other section:nth-child(2) > h2 {
+        display: block;
+        width: 100%;
+        height: 53px;
+        background-color: #F29600;
+        line-height: 53px;
+        color: #fff;
+        font-size: 33px;
+        font-weight: 500;
+        background-image: url("../images/index/colorBarIcon.png");
+        background-repeat: no-repeat;
+        background-position: 10px 50%;
+        padding-left: 50px;
+        margin-bottom: 27px; }
+        article#other section:nth-child(2) > h2 > span {
+          font-size: 19px;
+          padding-left: 5px; }
+        article#other section:nth-child(2) > h2 > a {
+          font-size: 19px;
+          color: #fff;
+          float: right;
+          padding-right: 10px; }
+        @media screen and (max-width: 376px) {
+          article#other section:nth-child(2) > h2 {
+            width: 100%;
+            font-size: 20px; }
+            article#other section:nth-child(2) > h2 > span {
+              font-size: 15px; }
+            article#other section:nth-child(2) > h2 > a {
+              font-size: 15px; } }
+      article#other section:nth-child(2) > div > img {
+        width: 100%;
+        height: 100%; }
+
+article#map {
+  width: 980px;
+  height: 506px;
+  margin: 0 auto;
+  margin-top: 64px;
+  margin-bottom: 115px; }
+  @media screen and (max-width: 376px) {
+    article#map {
+      margin-bottom: 50px; } }
+  article#map > h2 {
+    display: block;
+    width: 100%;
+    height: 53px;
+    background-color: #e2007e;
+    line-height: 53px;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 500;
+    background-image: url("../images/index/colorBarIcon.png");
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    padding-left: 50px;
+    margin-bottom: 27px; }
+    article#map > h2 > span {
+      font-size: 19px;
+      padding-left: 5px; }
+    article#map > h2 > a {
+      font-size: 19px;
+      color: #fff;
+      float: right;
+      padding-right: 10px; }
+    @media screen and (max-width: 376px) {
+      article#map > h2 {
+        width: 100%;
+        font-size: 20px; }
+        article#map > h2 > span {
+          font-size: 15px; }
+        article#map > h2 > a {
+          font-size: 15px; } }
+  @media screen and (min-width: 415px) and (max-width: 980px) {
+    article#map {
+      width: 95%; } }
+  @media screen and (max-width: 414px) {
+    article#map {
+      width: 95%; } }
+  article#map > div {
+    width: 880px;
+    height: 421px;
+    margin: 0 auto;
+    overflow: hidden; }
+    @media screen and (min-width: 415px) and (max-width: 980px) {
+      article#map > div {
+        width: 99%; } }
+    @media screen and (max-width: 414px) {
+      article#map > div {
+        width: 99%; } }
+    article#map > div > iframe {
+      display: block;
+      width: 880px;
+      height: 421px;
+      border: 0; }
+      @media screen and (min-width: 415px) and (max-width: 980px) {
+        article#map > div > iframe {
+          width: 100%;
+          height: 100%; } }
+      @media screen and (max-width: 414px) {
+        article#map > div > iframe {
+          width: 100%;
+          height: 100%; } }

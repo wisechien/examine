@@ -1,0 +1,464 @@
+@charset "UTF-8";
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, span, p, a, input, button {
+  font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch; }
+
+ul > li {
+  list-style: none; }
+
+@font-face {
+  font-family: "name";
+  src: url("../font/file.TTF"); }
+/* 
+@include transition(all 0.4s);
+@media screen and (min-width:750px) and (max-width: 1000px) {}
+@media screen and (max-width:1000px) {}
+
+
+@media screen and (max-width:1610px) {	
+}
+@media screen and (max-width:639px) {
+}
+@media screen and (max-width:415px) {
+}
+ */
+/*藏字*/
+/*中心點*/
+.banner {
+  width: 100%;
+  height: auto; }
+  .banner > img {
+    width: 100%;
+    height: auto; }
+  @media screen and (max-width: 709px) {
+    .banner {
+      display: none; } }
+
+article {
+  width: 1610px;
+  height: auto;
+  overflow: hidden;
+  margin: 60px auto 0 auto; }
+  @media screen and (max-width: 1610px) {
+    article {
+      width: 95%;
+      margin: 20px auto 0 auto; } }
+
+/*
+*--點擊改變狀態
+*  課程介紹
+*  .focus
+*  .focusdes
+*
+*  師資培訓
+*  .focus2
+*  .focusdes2
+*
+*
+*
+*/
+.left-Box {
+  width: 279px;
+  height: 1011px;
+  float: left;
+  border-right: 1px solid #888888;
+  padding-top: 66px; }
+  @media screen and (max-width: 1610px) {
+    .left-Box {
+      width: 20%; } }
+  @media screen and (max-width: 639px) {
+    .left-Box {
+      width: 90%;
+      height: auto;
+      overflow: hidden;
+      margin: 0 auto;
+      padding-top: 0px;
+      float: none;
+      border-right: 0px solid #888888;
+      border-bottom: 1px solid #888888; } }
+  .left-Box .big_title {
+    width: 279px;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 25px; }
+    @media screen and (max-width: 1610px) {
+      .left-Box .big_title {
+        width: 80%; } }
+    @media screen and (max-width: 639px) {
+      .left-Box .big_title {
+        width: 33.33333%;
+        height: auto;
+        padding-top: 0px;
+        float: left;
+        margin-bottom: 0px;
+        padding-bottom: 20px; } }
+    .left-Box .big_title > h2 {
+      display: block;
+      width: 279px;
+      height: 31px;
+      font-weight: 400;
+      padding-left: 45px; }
+      .left-Box .big_title > h2 > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        font-size: 24px;
+        line-height: 31px;
+        color: #6c6c6c; }
+      @media screen and (max-width: 1610px) {
+        .left-Box .big_title > h2 {
+          width: 100%;
+          height: auto;
+          padding-left: 0px;
+          text-align: center; }
+          .left-Box .big_title > h2 > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            font-size: 18px;
+            line-height: 0px;
+            color: #6c6c6c;
+            padding: 10px 0; } }
+      @media screen and (max-width: 321px) {
+        .left-Box .big_title > h2 > a {
+          font-size: 16px; } }
+      .left-Box .big_title > h2.focus {
+        background-image: url("../images/course/totleicon.png");
+        background-repeat: no-repeat;
+        background-position: 10px 0; }
+        .left-Box .big_title > h2.focus > a {
+          color: #7350b4; }
+        @media screen and (max-width: 1610px) {
+          .left-Box .big_title > h2.focus {
+            background-size: auto 100%;
+            background-position: 20% 0; } }
+        @media screen and (max-width: 1200px) {
+          .left-Box .big_title > h2.focus {
+            background-size: auto 100%;
+            background-position: 10% 0; } }
+        @media screen and (max-width: 910px) {
+          .left-Box .big_title > h2.focus {
+            background-size: auto 100%;
+            background-position: 0 0; } }
+        @media screen and (max-width: 640px) {
+          .left-Box .big_title > h2.focus {
+            background-image: none; } }
+      .left-Box .big_title > h2.focus2 {
+        background-image: url("../images/teacher/iconBles.jpg");
+        background-repeat: no-repeat;
+        background-position: 10px 0; }
+        .left-Box .big_title > h2.focus2 > a {
+          color: #009ee7; }
+        @media screen and (max-width: 1610px) {
+          .left-Box .big_title > h2.focus2 {
+            background-size: auto 100%;
+            background-position: 20% 0; } }
+        @media screen and (max-width: 1200px) {
+          .left-Box .big_title > h2.focus2 {
+            background-size: auto 100%;
+            background-position: 10% 0; } }
+        @media screen and (max-width: 910px) {
+          .left-Box .big_title > h2.focus2 {
+            background-size: auto 100%;
+            background-position: 0 0; } }
+        @media screen and (max-width: 640px) {
+          .left-Box .big_title > h2.focus2 {
+            background-image: none; } }
+    .left-Box .big_title > ul > li {
+      position: relative;
+      display: block;
+      width: 250px;
+      height: auto;
+      float: right;
+      margin-top: 19px; }
+      @media screen and (max-width: 1610px) {
+        .left-Box .big_title > ul > li {
+          width: 100%; } }
+      .left-Box .big_title > ul > li.focusdes > a {
+        color: #7350b4; }
+      .left-Box .big_title > ul > li.focusdes > span {
+        background-color: #7350b4;
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-top: -5px; }
+        @media screen and (max-width: 1610px) {
+          .left-Box .big_title > ul > li.focusdes > span {
+            margin-left: 12%; } }
+        @media screen and (max-width: 1200px) {
+          .left-Box .big_title > ul > li.focusdes > span {
+            margin-left: 7%; } }
+        @media screen and (max-width: 910px) {
+          .left-Box .big_title > ul > li.focusdes > span {
+            margin-left: 2%; } }
+        @media screen and (max-width: 640px) {
+          .left-Box .big_title > ul > li.focusdes > span {
+            display: none; } }
+      .left-Box .big_title > ul > li.focusdes2 > a {
+        color: #009ee7; }
+      .left-Box .big_title > ul > li.focusdes2 > span {
+        background-color: #009ee7;
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-top: -5px; }
+        @media screen and (max-width: 1610px) {
+          .left-Box .big_title > ul > li.focusdes2 > span {
+            margin-left: 12%; } }
+        @media screen and (max-width: 1200px) {
+          .left-Box .big_title > ul > li.focusdes2 > span {
+            margin-left: 7%; } }
+        @media screen and (max-width: 910px) {
+          .left-Box .big_title > ul > li.focusdes2 > span {
+            margin-left: 2%; } }
+        @media screen and (max-width: 640px) {
+          .left-Box .big_title > ul > li.focusdes2 > span {
+            display: none; } }
+      .left-Box .big_title > ul > li:hover > a {
+        color: #888; }
+      .left-Box .big_title > ul > li:hover > span {
+        background-color: #888888; }
+      .left-Box .big_title > ul > li > a {
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        padding-left: 45px;
+        color: #666666; }
+        @media screen and (max-width: 1610px) {
+          .left-Box .big_title > ul > li > a {
+            text-align: center;
+            padding-left: 0px; } }
+        @media screen and (max-width: 769px) {
+          .left-Box .big_title > ul > li > a {
+            padding-left: 25px; } }
+        @media screen and (max-width: 639px) {
+          .left-Box .big_title > ul > li > a {
+            padding-left: 0px;
+            text-align: center;
+            font-size: 14px; } }
+      .left-Box .big_title > ul > li > span {
+        position: absolute;
+        top: 50%;
+        margin-top: -2.5px;
+        left: 12%;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+        display: block;
+        width: 5px;
+        height: 5px;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        border-radius: 25px;
+        background-color: #666666;
+        float: left; }
+        @media screen and (max-width: 1610px) {
+          .left-Box .big_title > ul > li > span {
+            display: none; } }
+
+.right-Box {
+  width: 1272px;
+  height: auto;
+  overflow: hidden;
+  float: right; }
+  @media screen and (max-width: 1610px) {
+    .right-Box {
+      width: 70%; } }
+  @media screen and (max-width: 639px) {
+    .right-Box {
+      width: 90%;
+      height: auto;
+      overflow: hidden;
+      float: none;
+      margin: 50px auto 0 auto; } }
+  .right-Box > h1 {
+    display: block;
+    width: 100%;
+    height: 56px;
+    background-color: #7350b4;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 40px;
+    padding-left: 77px;
+    background-image: url("../images/course/bannerIcon.png");
+    background-repeat: no-repeat;
+    background-position: 29px 50%;
+    margin-bottom: 20px; }
+    .right-Box > h1.bluebg {
+      background-color: #009ee7; }
+    @media screen and (max-width: 1160px) {
+      .right-Box > h1 {
+        font-size: 20px;
+        line-height: 56px;
+        overflow: hidden; } }
+    @media screen and (max-width: 418px) {
+      .right-Box > h1 {
+        font-size: 20px; } }
+    @media screen and (max-width: 321px) {
+      .right-Box > h1 {
+        background-image: none;
+        padding-left: 10px; } }
+  .right-Box > .tltle2 {
+    width: 100%;
+    height: 32px;
+    background-image: url("../images/course/texticon.png");
+    background-repeat: no-repeat;
+    margin-top: 87px;
+    background-position: 5px 50%; }
+    .right-Box > .tltle2 > h3 {
+      font-size: 36px;
+      color: #666666;
+      padding-left: 40px;
+      line-height: 30px;
+      float: left; }
+    .right-Box > .tltle2 > span {
+      display: block;
+      width: 75%;
+      height: 24px;
+      float: right;
+      background-color: #7350b4;
+      margin-top: 5px; }
+    @media screen and (max-width: 1610px) {
+      .right-Box > .tltle2 > h3 {
+        font-size: 30px; }
+      .right-Box > .tltle2 > span {
+        width: 65%; } }
+    @media screen and (max-width: 1090px) {
+      .right-Box > .tltle2 > span {
+        width: 55%; } }
+    @media screen and (max-width: 572px) {
+      .right-Box > .tltle2 > h3 {
+        font-size: 28px; }
+      .right-Box > .tltle2 > span {
+        width: 40%; }
+        .right-Box > .tltle2 > span.displaySpan {
+          width: 20%; } }
+
+a.gotoTop {
+  display: block;
+  width: 50px;
+  height: 83px;
+  background-image: url("../images/gototop.png");
+  margin: 200px auto 150px auto; }
+  @media screen and (max-width: 415px) {
+    a.gotoTop {
+      margin: 50px auto 50px auto; } }
+
+.title {
+  width: 100%;
+  height: 82px;
+  background-image: url("../images/Teachingmaterial/Teaching_title.jpg"); }
+  @media screen and (max-width: 1610px) {
+    .title {
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: 0 50%; } }
+  @media screen and (max-width: 769px) {
+    .title {
+      background-size: 150% auto;
+      background-repeat: no-repeat;
+      background-position: 0 50%; } }
+  @media screen and (max-width: 415px) {
+    .title {
+      display: none; } }
+
+.txt_Content {
+  width: 100%;
+  height: auto; }
+  .txt_Content > h1, .txt_Content > p {
+    color: #666666; }
+  .txt_Content > h1 {
+    font-size: 40px;
+    padding-top: 35px; }
+  .txt_Content > p {
+    padding-top: 50px;
+    font-size: 24px;
+    line-height: 1.8em; }
+  @media screen and (max-width: 415px) {
+    .txt_Content > h1 {
+      font-size: 30px;
+      padding-top: 0px; }
+    .txt_Content > p {
+      padding-top: 20px;
+      font-size: 20px;
+      line-height: 1.8em; } }
+  @media screen and (max-width: 321px) {
+    .txt_Content > h1 {
+      font-size: 25px;
+      padding-top: 0px; }
+    .txt_Content > p {
+      padding-top: 20px;
+      font-size: 15px;
+      line-height: 1.8em; } }
+
+.Conbox {
+  width: 100%;
+  height: auto; }
+  .Conbox img {
+    width: 100%;
+    height: auto; }
+
+.pic_text {
+  width: 100%;
+  height: auto;
+  margin-top: 100px; }
+  .pic_text img {
+    float: left; }
+  .pic_text > h3, .pic_text > p {
+    color: #666666; }
+  .pic_text > h3 {
+    font-size: 40px;
+    padding-top: 140px;
+    font-style: italic; }
+  .pic_text > p {
+    padding-top: 20px;
+    font-size: 24px;
+    line-height: 1.8em; }
+  @media screen and (max-width: 415px) {
+    .pic_text {
+      margin-top: 10px; }
+      .pic_text img {
+        width: 100%;
+        height: auto; }
+      .pic_text > h3 {
+        font-size: 30px;
+        padding-top: 140px;
+        font-style: italic;
+        text-align: center; }
+      .pic_text > p {
+        padding-top: 20px;
+        font-size: 20px;
+        line-height: 1.8em; } }
+  @media screen and (max-width: 321px) {
+    .pic_text > h3 {
+      font-size: 20px;
+      padding-top: 140px;
+      font-style: italic;
+      text-align: center; }
+    .pic_text > p {
+      padding-top: 20px;
+      font-size: 15px;
+      line-height: 1.8em; } }

@@ -1,0 +1,201 @@
+@charset "UTF-8";
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, span, p, a, input, button {
+  font-family: "Microsoft JhengHei","Heiti TC","sans-serif";
+  text-decoration: none; }
+
+img {
+  display: block; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch; }
+
+ul > li {
+  list-style: none; }
+
+@font-face {
+  font-family: "name";
+  src: url("../font/file.TTF"); }
+/* 
+@include transition(all 0.4s);
+@media screen and (min-width:750px) and (max-width: 1000px) {}
+@media screen and (max-width:1000px) {}
+
+
+@media screen and (max-width:1610px) {	
+}
+@media screen and (max-width:639px) {
+}
+@media screen and (max-width:415px) {
+}
+ */
+/*藏字*/
+/*中心點*/
+.banner {
+  width: 100%;
+  height: auto; }
+  .banner img {
+    width: 100%;
+    height: auto; }
+  @media screen and (max-width: 709px) {
+    .banner {
+      display: none; } }
+
+article {
+  width: 980px;
+  height: auto;
+  overflow: hidden;
+  margin: 69px auto 0 auto;
+  padding-bottom: 69px; }
+  @media screen and (max-width: 980px) {
+    article {
+      width: 100%; } }
+  article .title {
+    width: 100%;
+    height: 195px;
+    background-image: url("../images/news/newsTit.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-bottom: 2px solid #6fb82b; }
+    @media screen and (max-width: 980px) {
+      article .title {
+        width: 90%;
+        margin: 0 auto; } }
+    @media screen and (max-width: 415px) {
+      article .title {
+        width: 90%;
+        height: 145px;
+        margin: 0px auto 0 auto;
+        background-size: 170% auto; } }
+  article .content {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 42px; }
+    @media screen and (max-width: 980px) {
+      article .content {
+        width: 90%;
+        margin: 42px auto 0 auto; } }
+    @media screen and (max-width: 415px) {
+      article .content {
+        width: 90%;
+        margin: 42px auto 0 auto; } }
+    article .content > ul > li {
+      display: block;
+      width: 240px;
+      height: 300px;
+      float: left;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border: 1px solid #E5E5E5; }
+      article .content > ul > li.mr4 {
+        margin-right: 0px; }
+      @media screen and (max-width: 980px) {
+        article .content > ul > li {
+          width: 33%;
+          height: 320px;
+          margin-right: 0px;
+          margin-bottom: 6px; } }
+      @media screen and (max-width: 709px) {
+        article .content > ul > li {
+          width: 50%;
+          margin-right: 0px;
+          margin-bottom: 6px; } }
+      @media screen and (max-width: 415px) {
+        article .content > ul > li {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          margin-right: 0px;
+          margin-bottom: 6px; } }
+      article .content > ul > li > a {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%; }
+        article .content > ul > li > a .hoverBox {
+          -moz-transition: all 0.2s;
+          -o-transition: all 0.2s;
+          -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(111, 184, 43, 0.8);
+          background-image: url("../images/news/newshovericon.png");
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          opacity: 0; }
+        article .content > ul > li > a:hover > .hoverBox {
+          opacity: 1; }
+        article .content > ul > li > a > div {
+          width: 100%; }
+          article .content > ul > li > a > div.img {
+            height: 161px; }
+            article .content > ul > li > a > div.img > img {
+              width: 100%;
+              height: 100%; }
+            @media screen and (max-width: 980px) {
+              article .content > ul > li > a > div.img {
+                height: 50%;
+                overflow: hidden; }
+                article .content > ul > li > a > div.img > img {
+                  width: 100%;
+                  height: auto; } }
+            @media screen and (max-width: 415px) {
+              article .content > ul > li > a > div.img {
+                height: auto;
+                overflow: hidden; }
+                article .content > ul > li > a > div.img > img {
+                  width: 100%;
+                  height: auto; } }
+          article .content > ul > li > a > div.text {
+            position: relative;
+            height: 140px; }
+            @media screen and (max-width: 980px) {
+              article .content > ul > li > a > div.text {
+                height: 50%; } }
+            @media screen and (max-width: 709px) {
+              article .content > ul > li > a > div.text {
+                height: 140px; } }
+            article .content > ul > li > a > div.text > h3 {
+              font-size: 14px;
+              font-weight: 400;
+              color: #000;
+              padding: 20px 24px 0 24px; }
+            article .content > ul > li > a > div.text > div {
+              position: absolute;
+              width: 200px;
+              height: 30px;
+              border-top: 1px solid #6fb82b;
+              margin: 0 auto;
+              bottom: 5px;
+              left: 50%;
+              margin-left: -100px; }
+              @media screen and (max-width: 980px) {
+                article .content > ul > li > a > div.text > div {
+                  width: 90%;
+                  margin-left: -45%; } }
+              @media screen and (max-width: 709px) {
+                article .content > ul > li > a > div.text > div {
+                  bottom: 10px; } }
+              @media screen and (max-width: 415px) {
+                article .content > ul > li > a > div.text > div {
+                  width: 90%;
+                  margin-left: -45%; } }
+              article .content > ul > li > a > div.text > div > h4 {
+                float: left;
+                color: #989898; }
+              article .content > ul > li > a > div.text > div > span {
+                float: right;
+                color: #6fb82b; }
